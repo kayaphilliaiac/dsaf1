@@ -1,2 +1,60 @@
 # dsaf
 made using opendsaf
+
+
+## use this
+```
+<!DOCTYPE html>
+<html>
+    <head>
+		<base href="https://cdn.jsdelivr.net/gh/kayaphilliaiac/dsaf1@97a3067b9ca4da24ffa3615638bb0844084199e2/">
+        <meta charset="UTF-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="user-scalable=no">
+        <link rel="icon" href="icon/icon.png" type="image/png">
+        <link rel="apple-touch-icon" href="icon/icon.png">
+        <link rel="stylesheet" type="text/css" href="fonts/gamefont.css">
+        <title>DSAF1</title>
+    </head>
+    <body style="background-color: black">
+        <script type="text/javascript" src="js/libs/pixi.js"></script>
+        <script type="text/javascript" src="js/libs/pixi-tilemap.js"></script>
+        <script type="text/javascript" src="js/libs/pixi-picture.js"></script>
+        <script type="text/javascript" src="js/libs/fpsmeter.js"></script>
+        <script type="text/javascript" src="js/libs/lz-string.js"></script>
+        <script type="text/javascript" src="js/libs/iphone-inline-video.browser.js"></script>
+        <script type="text/javascript" src="js/rpg_core.js"></script>
+        <script type="text/javascript" src="js/rpg_managers.js"></script>
+        <script type="text/javascript" src="js/rpg_objects.js"></script>
+        <script type="text/javascript" src="js/rpg_scenes.js"></script>
+        <script type="text/javascript" src="js/rpg_sprites.js"></script>
+        <script type="text/javascript" src="js/rpg_windows.js"></script>
+        <script type="text/javascript" src="js/plugins.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+		<script><
+    // full screen the game ---------------took snippet from gn math, sorry----------------------------
+    function applycanvasmode() {
+        let w = 0;
+        let h = 0;
+        let maxW = window.innerWidth;
+        let maxH = window.innerHeight;
+        if ((maxW * 0.75) > maxH) {
+            h = maxH;
+            w = Math.floor((maxH / 3) * 4);
+        } else {
+            w = maxW;
+            h = Math.floor((maxW / 4) * 3);
+        }
+        document.querySelector("#GameCanvas").style.width = w + "px";
+        document.querySelector("#GameCanvas").style.height = h + "px";
+        document.querySelector("#GameVideo").style.width = w + "px";
+        document.querySelector("#GameVideo").style.height = h + "px";
+        document.querySelector("#UpperCanvas").style.width = w + "px";
+        document.querySelector("#UpperCanvas").style.height = h + "px";
+    }
+    setInterval(applycanvasmode, 100);
+</script>
+    </body>
+</html>
+```
